@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  background-color: rgb(146, 223, 242);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add dashboard specific override */
+.App.dashboard-container {
+  padding: 0;
+  display: block;
+  background-color: white;
 }
 
 .App-logo {
@@ -35,4 +47,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
